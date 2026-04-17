@@ -36,6 +36,10 @@ su -
 
 ```bash
 hostnamectl set-hostname mail.local
+```
+nama bisa di ganti sesuai keinginan
+lalu cek hasilnya
+```bash
 hostname  # cek hasilnya
 ```
 
@@ -52,9 +56,9 @@ Isi seperti ini (sesuaikan dengan jaringan kamu):
 ```ini
 auto ens33
 iface ens33 inet static
-  address 10.222.11.178
+  address 10.25.10.150
   netmask 255.255.255.0
-  gateway 10.222.11.1
+  gateway 10.25.10.1
   dns-nameservers 8.8.8.8
 ```
 
@@ -270,7 +274,7 @@ systemctl reload apache2
 Buka:
 
 ```
-http://10.222.11.178/roundcube
+http://10.25.10.150/roundcube
 ```
 
 Login dengan:
